@@ -5,6 +5,8 @@ import { ConnectedReduxTest, rootReducer, initialState } from './ReduxTest'
 import { Provider, connect } from 'react-redux';
 import { createStore } from 'redux';
 import DragTest from './DragTest'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 
 
 // Store creation
@@ -14,8 +16,12 @@ const store = createStore(rootReducer, initialState);
 export default function App() {
   return (
     <Provider store={store}>
-      {/* <ConnectedReduxTest /> */}
-      <DragTest />
+      <Router>
+        {/* <ConnectedReduxTest /> */}
+        {/* <Route exact path='/' component={`<div>App</div>`} /> */}
+        <Route exact path='/redux-test' component={ConnectedReduxTest} />
+        <Route exact path='/drag-test' component={DragTest} />
+      </Router>
     </Provider>
   );
 }

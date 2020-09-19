@@ -1,0 +1,29 @@
+[debug] [2020-09-17T06:51:56.447Z] ----------------------------------------------------------------------
+[debug] [2020-09-17T06:51:56.449Z] Command:       /Users/koyajima/.nodebrew/node/v14.4.0/bin/node /Users/koyajima/.nodebrew/current/bin/firebase serve
+[debug] [2020-09-17T06:51:56.449Z] CLI Version:   8.4.3
+[debug] [2020-09-17T06:51:56.450Z] Platform:      darwin
+[debug] [2020-09-17T06:51:56.450Z] Node Version:  v14.4.0
+[debug] [2020-09-17T06:51:56.461Z] Time:          Thu Sep 17 2020 15:51:56 GMT+0900 (日本標準時)
+[debug] [2020-09-17T06:51:56.461Z] ----------------------------------------------------------------------
+[debug] [2020-09-17T06:51:56.461Z] 
+[debug] [2020-09-17T06:51:56.478Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-17T06:51:56.478Z] > authorizing via signed-in user
+[debug] [2020-09-17T06:51:56.478Z] [iam] checking project synchronize-sample for permissions ["firebase.projects.get"]
+[debug] [2020-09-17T06:51:56.480Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-09-17T06:51:56.480Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-09-17T06:51:56.661Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 17 Sep 2020 06:51:56 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-17T06:51:56.678Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/synchronize-sample:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-09-17T06:51:57.408Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 17 Sep 2020 06:51:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=581","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-17T06:51:57.410Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/synchronize-sample  
+ 
+[debug] [2020-09-17T06:51:57.870Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 17 Sep 2020 06:51:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from '/Users/koyajima/Code/firebase_synchronize'...
+[info] 
+[debug] [2020-09-17T06:51:57.877Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/synchronize-sample/webApps/-/config  
+ 
+[debug] [2020-09-17T06:51:59.369Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 17 Sep 2020 06:51:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}

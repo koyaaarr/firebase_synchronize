@@ -24,3 +24,5 @@ yarn-error.log*
 
 # credential
 config.js
+
+*.log
